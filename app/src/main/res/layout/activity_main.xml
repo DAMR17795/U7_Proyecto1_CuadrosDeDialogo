@@ -7,20 +7,22 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btn"
+        android:id="@+id/btLista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ver dialogo lista"
+        android:backgroundTint="#2196F3"
+        android:text="ALERTA DIALOGO LISTADO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn2"
+        android:id="@+id/btBoton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ver dialogo botones"
+        android:backgroundTint="#9C27B0"
+        android:text="ALERTA DIALOGO CON BOTONES"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
