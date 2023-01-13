@@ -20,24 +20,22 @@ class MainActivity : AppCompatActivity() {
         var selectedItemIndex = 0;
         val items = arrayOf("valorant", "lol", "fifa", "csgo")
         var selectedItem = items[selectedItemIndex]
+
         boton.setOnClickListener {
 
             val builder = AlertDialog.Builder(this)
             builder.setTitle("List dialog")
 
-            builder.setIcon(R.drawable.simbol)
+            //builder.setIcon(R.drawable.simbol)
 
             builder.setSingleChoiceItems(items, selectedItemIndex) { dialog, which ->
                 selectedItemIndex = which
                 selectedItem = items[which]
                 Toast.makeText(this, items[which], Toast.LENGTH_SHORT).show()
-
             }
-
 
             val dialog = builder.create()
             dialog.show()
-
         }
 
         boton2.setOnClickListener {
@@ -45,7 +43,7 @@ class MainActivity : AppCompatActivity() {
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Buttons dialog")
 
-            builder.setIcon(R.drawable.simbol)
+            //builder.setIcon(R.drawable.simbol)
 
             builder.setPositiveButton("Ok") { dialog, which ->
 
@@ -60,8 +58,6 @@ class MainActivity : AppCompatActivity() {
 
             }
 
-
-
             val dialog = builder.create()
             dialog.setOnShowListener {
                 val positiveButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE)
@@ -70,6 +66,7 @@ class MainActivity : AppCompatActivity() {
                 val negativeButton = dialog.getButton(AlertDialog.BUTTON_NEGATIVE)
                 negativeButton.setTextColor(ContextCompat.getColor(this, R.color.rojo))
             }
+
             dialog.show()
 
         }
